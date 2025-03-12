@@ -1,0 +1,32 @@
+.modal {
+	&_overlay {
+		position: fixed;
+		inset: 0;
+		background-color: rgba(0, 0, 0, 0.5);
+		display: flex;
+		justify-content: center;
+		align-items: center;
+	}
+	&__close {
+		border: 0;
+		position: absolute;
+		right: -10%;
+		top: 0px;
+		background-color: white;
+		border-radius: 10px;
+		padding: 5px 10px;
+		cursor: pointer;
+		transition: all 0.2s ease-in-out;
+		&:hover {
+			background-color: #e5e5e5;
+		}
+	}
+	&__content {
+		background-color: white;
+		border-radius: 10px;
+		min-width: 500px;
+		height: auto;
+		position: relative;
+		padding: 20px;
+	}
+}
